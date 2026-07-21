@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link
+    rel="preload"
+    as="image"
+    href="i.webp"
+    fetchpriority="high">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5EM9KRMB0L"></script>
   <script>
@@ -22,8 +27,6 @@
   <meta property="og:url" content="https://traskercabs.github.io/Trasker-Cabs/">
   <meta property="og:type" content="website">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -77,6 +80,11 @@
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
+
+    .hero{
+    content-visibility:auto;
+    contain-intrinsic-size:600px;
+}
 
     /* Standardized Focus States for Accessibility */
     :focus-visible {
@@ -796,6 +804,14 @@
         gap: 25px;
       }
     }
+
+    .hero-img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:cover;
+}
+
   </style>
 
   <!-- Structured Data (TaxiService) -->
