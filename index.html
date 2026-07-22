@@ -7,13 +7,7 @@
     href="ii.webp"
     fetchpriority="high">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5EM9KRMB0L"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-5EM9KRMB0L');
-  </script>
+  
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -1333,5 +1327,23 @@
 
     window.onload = calculate;
   </script>
+  <script>
+window.addEventListener("load", () => {
+  const s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=G-5EM9KRMB0L";
+  document.head.appendChild(s);
+
+  s.onload = () => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+
+    gtag("js", new Date());
+    gtag("config", "G-5EM9KRMB0L");
+  };
+});
+</script>
+
 </body>
 </html>
