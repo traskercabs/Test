@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>Dehradun to Delhi Cab Booking | Direct Airport Drops - Trasker Cabs</title>
@@ -16,6 +17,7 @@
   <!-- Performance & Font Preloading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://api.openweathermap.org">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
@@ -703,10 +705,12 @@
       display.innerText = `₹${rate.toLocaleString('en-IN')} - ₹${upperRate.toLocaleString('en-IN')}`;
     }
 
-    // Lightweight Destination Weather Fetcher (Delhi NCR)
+// Lightweight Destination Weather Fetcher (Lazy Loaded via IntersectionObserver)
     function loadDelhiWeather() {
       const apiKey = "af21b18c73ad12db5b873b1067ec6b00";
-      fetch(`https://api.openweathermap.org/data/2.5/weather?q=New%20Delhi&appid=${apiKey}&units=metric`)
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=New%20Delhi&appid=${apiKey}&units=metric`, {
+        priority: 'low'
+      })
         .then(res => res.json())
         .then(data => {
           if (data && data.main) {
@@ -728,9 +732,30 @@
         });
     }
 
+    // Only run the fare calculation on initial load
     window.addEventListener("DOMContentLoaded", () => {
       calculate();
-      setTimeout(loadDelhiWeather, 1200);
+    });
+
+    // Zero-Critical-Path Lazy Loader for Weather Widget
+    window.addEventListener("load", () => {
+      const weatherWidget = document.querySelector(".weather-info");
+      if (!weatherWidget) return;
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if ('requestIdleCallback' in window) {
+              window.requestIdleCallback(loadDelhiWeather, { timeout: 2000 });
+            } else {
+              setTimeout(loadDelhiWeather, 300);
+            }
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "150px" });
+
+      observer.observe(weatherWidget);
     });
   </script>
 </body>
