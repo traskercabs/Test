@@ -712,7 +712,7 @@ function calculate() {
   
 
       const upperRate = rate + 500;
-      display.innerText = `₹${rate.toLocaleString('en-IN')} - ₹${upperRate.toLocaleString('en-IN')}`;
+      display.textContent = `₹${rate.toLocaleString('en-IN')} - ₹${upperRate.toLocaleString('en-IN')}`;
     }
 
 // Lightweight Destination Weather Fetcher (Lazy Loaded via IntersectionObserver)
@@ -724,17 +724,17 @@ function calculate() {
         .then(res => res.json())
         .then(data => {
           if (data && data.main) {
-            document.getElementById("tempDisplay").innerText = Math.round(data.main.temp) + "°C";
-            document.getElementById("weatherCondition").innerText = data.weather[0].main;
-            document.getElementById("humidityVal").innerText = data.main.humidity;
-            document.getElementById("feelsVal").innerText = Math.round(data.main.feels_like);
-            document.getElementById("windVal").innerText = data.wind.speed;
-            document.getElementById("visVal").innerText = (data.visibility / 1000).toFixed(1);
+            document.getElementById("tempDisplay").textContent = Math.round(data.main.temp) + "°C";
+            document.getElementById("weatherCondition").textContent = data.weather[0].main;
+            document.getElementById("humidityVal").textContent = data.main.humidity;
+            document.getElementById("feelsVal").textContent = Math.round(data.main.feels_like);
+            document.getElementById("windVal").textContent = data.wind.speed;
+            document.getElementById("visVal").textContent = (data.visibility / 1000).toFixed(1);
             
             let cond = "Optimal driving weather";
             if (data.weather[0].main === "Rain") cond = "Wet roads in NCR. Drive safe.";
             if (data.weather[0].main === "Fog" || data.weather[0].main === "Mist") cond = "Low visibility in NCR.";
-            document.getElementById("weatherSub").innerText = cond;
+            document.getElementById("weatherSub").textContent = cond;
           }
         })
         .catch(() => {
