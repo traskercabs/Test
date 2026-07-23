@@ -3,7 +3,7 @@
 <head>
   
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Dehradun to Delhi Cab Booking | Direct Airport Drops - Trasker Cabs</title>
   <meta name="description" content="Book reliable Dehradun to Delhi cabs. Direct transfers to IGI Airport T1/T2/T3, zero surge pricing, verified hill-certified drivers, and fixed fares starting at ₹3,499.">
   <link rel="canonical" href="https://traskercabs.github.io/Trasker-Cabs/dehradun-to-delhi.html">
@@ -18,9 +18,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://api.openweathermap.org">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=optional">
   </noscript>
 
   <!-- Google Tag (gtag.js) -->
@@ -127,6 +127,14 @@
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
       transition: border-color 0.3s, transform 0.3s;
       aspect-ratio: 16 / 9;
+      min-height: 220px;
+    }
+    .smart-img, #imageFallback {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
     .smart-image-wrapper:hover { border-color: var(--gold); transform: translateY(-3px); }
     .smart-img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -679,14 +687,14 @@
       "Rishikesh-IGIAirport": { sedan: 3799, suv: 4800, prime: 5800 }
     };
 
-    function calculate() {
+function calculate() {
       const p = document.getElementById('pickup').value;
       const d = document.getElementById('dropoff').value;
       const v = document.getElementById('vehicle').value;
       const display = document.getElementById('priceDisplay');
 
       if (p === d) {
-        display.innerText = "Custom Local Package";
+        display.textContent = "Custom Local Package";
         return;
       }
 
@@ -700,6 +708,8 @@
         if (v === 'prime') baseRate = 5500;
         rate = baseRate;
       }
+
+  
 
       const upperRate = rate + 500;
       display.innerText = `₹${rate.toLocaleString('en-IN')} - ₹${upperRate.toLocaleString('en-IN')}`;
