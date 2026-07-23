@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
   <title>Dehradun to Delhi Cab Booking | Direct Airport Drops - Trasker Cabs</title>
   <meta name="description" content="Book reliable Dehradun to Delhi cabs. Direct transfers to IGI Airport T1/T2/T3, zero surge pricing, verified hill-certified drivers, and fixed fares starting at ₹3,499.">
   <link rel="canonical" href="https://traskercabs.github.io/Trasker-Cabs/dehradun-to-delhi.html">
   
-  <!-- Open Graph / Social Meta Tags -->
   <meta property="og:title" content="Dehradun to Delhi Cab Service | Trasker Cabs">
   <meta property="og:description" content="Express intercity taxi service from Dehradun to Delhi NCR and IGI Airport. Fixed highway pricing and verified commercial drivers.">
   <meta property="og:url" content="https://traskercabs.github.io/Trasker-Cabs/dehradun-to-delhi.html">
   <meta property="og:type" content="website">
 
-  <!-- Performance & Font Preloading -->
+  <!-- Performance Preloading & DNS Hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://api.openweathermap.org">
@@ -23,32 +21,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=optional">
   </noscript>
 
-  <!-- Google Tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5EM9KRMB0L"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-5EM9KRMB0L');
-  </script>
-
   <style>
+    /* ==========================================
+       OPTIMIZED CORE VARIABLES & RESETS
+       ========================================== */
     :root {
-      --bg-gradient-1: #1B2432;
-      --bg-gradient-2: #111827;
-      --bg-gradient-3: #2A1F42;
-      --bg-surface: rgba(10, 17, 32, 0.55);
-      --bg-card: rgba(20, 13, 36, 0.65);
-      --glass-border: rgba(255, 255, 255, 0.1);
-      --gold: #F59E0B;
-      --gold-light: #FCD34D;
-      --gold-glow: rgba(245, 158, 11, 0.28);
+      --bg-dark: #060d1a;
+      --bg-surface: #0a192f;
+      --bg-card: #112240;
+      --gold: #f3c400;
+      --gold-hover: #ffd000;
+      --gold-glow: rgba(243, 196, 0, 0.18);
+      --purple-border: rgba(255, 255, 255, 0.1);
       --accent-blue: #3B82F6;
       --accent-green: #10B981;
-      --accent-purple: #7C3AED;
-      --text-main: #F8FAFC;
-      --text-muted: #94A3B8;
-      --text-soft: #CBD5E1;
+      --text-main: #ffffff;
+      --text-muted: #a898c0;
+      --text-soft: #cbd5e1;
       --radius-sm: 8px;
       --radius-md: 14px;
       --radius-lg: 20px;
@@ -58,16 +47,19 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     }
-    
-    body { 
-      background: linear-gradient(135deg, var(--bg-gradient-1), var(--bg-gradient-2), var(--bg-gradient-3));
-      background-attachment: fixed;
-      background-size: cover;
-      color: var(--text-main); 
-      line-height: 1.6; 
-      overflow-x: hidden; 
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.5;
+      overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -75,60 +67,162 @@
       outline: 2px solid var(--gold);
       outline-offset: 2px;
     }
-    
-    /* Navigation Link System */
-    .navbar { 
-      display: flex; 
-      justify-content: space-between; 
-      align-items: center; 
-      padding: 18px 5%; 
-      max-width: 1400px; 
-      margin: auto; 
-      border-bottom: 1px solid var(--glass-border); 
-      background: rgba(15, 23, 42, 0.6); 
-      backdrop-filter: blur(16px); 
-      -webkit-backdrop-filter: blur(16px); 
-      position: sticky; 
-      top: 0; 
+
+    /* ==========================================
+       NAVBAR
+       ========================================== */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 5%;
+      max-width: 1350px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--purple-border);
+      background: rgba(6, 13, 26, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
       z-index: 100;
     }
-    .brand { display: flex; align-items: center; gap: 12px; font-size: 1.45rem; font-weight: 800; letter-spacing: -0.5px; text-decoration: none; color: var(--text-main); }
-    .brand-icon { width: 42px; height: 42px; background: linear-gradient(135deg, var(--gold), #D97706); color: #000; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.35rem; box-shadow: 0 0 20px var(--gold-glow); }
-    .brand span { color: var(--gold); }
-    
-    .nav-actions { display: flex; gap: 12px; align-items: center; }
-    .contact-number { color: var(--text-main); text-decoration: none; font-weight: 700; font-size: 0.95rem; margin-right: 15px; display: inline-flex; align-items: center; gap: 6px; }
-    .contact-number:hover { color: var(--gold); }
-    .btn-outline { background: rgba(255,255,255,0.05); color: var(--text-main); border: 1px solid var(--glass-border); padding: 10px 18px; border-radius: 50px; font-weight: 600; font-size: 0.88rem; text-decoration: none; transition: all 0.2s ease; cursor: pointer; backdrop-filter: blur(5px); }
-    .btn-outline:hover { border-color: var(--gold); color: var(--gold); background: rgba(245, 158, 11, 0.1); }
-    .btn-gold { background: linear-gradient(135deg, var(--gold), #D97706); color: #000; border: none; padding: 10px 20px; border-radius: 50px; font-weight: 700; font-size: 0.88rem; text-decoration: none; transition: all 0.2s ease; cursor: pointer; box-shadow: 0 4px 15px var(--gold-glow); }
-    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 6px 20px var(--gold-glow); }
 
-    /* Hero Section & Smart Image Slot */
-    .hero { max-width: 1400px; margin: 35px auto; padding: 0 5%; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: start; }
-    .hero-text h1 { font-size: 3.25rem; font-weight: 800; line-height: 1.15; margin-bottom: 18px; letter-spacing: -1px; text-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-    .hero-text h1 span { background: linear-gradient(135deg, var(--gold), #FDE047); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .hero-text p { font-size: 1.08rem; color: var(--text-muted); margin-bottom: 24px; max-width: 580px; }
-    
-    .trust-badges { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px; }
-    .badge { background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); padding: 8px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; gap: 8px; backdrop-filter: blur(5px); }
-    .badge::before { content: '✓'; color: var(--gold); font-weight: 800; }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
 
-    /* Smart SEO Image Slot (Zero CLS) */
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--gold);
+      color: var(--bg-dark);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.3rem;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .contact-number {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-right: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .contact-number:hover {
+      color: var(--gold);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text-main);
+      border: 1px solid var(--purple-border);
+      padding: 10px 18px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--bg-dark);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.15s;
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-hover);
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================
+       HERO SECTION & SMART ZERO-CLS IMAGE SLOT
+       ========================================== */
+    .hero {
+      max-width: 1350px;
+      margin: 30px auto 50px;
+      padding: 0 5%;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .hero-text h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      letter-spacing: -0.8px;
+    }
+
+    .hero-text h1 span {
+      color: var(--gold);
+    }
+
+    .hero-text p {
+      font-size: 1.08rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      max-width: 560px;
+    }
+
     .smart-image-wrapper {
       position: relative;
       width: 100%;
-      max-width: 580px;
-      margin: 20px 0 28px;
-      border-radius: var(--radius-lg);
+      max-width: 560px;
+      margin: 20px 0 24px;
+      border-radius: var(--radius-md);
       overflow: hidden;
       background: var(--bg-card);
-      border: 1px solid rgba(245, 158, 11, 0.4);
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
-      transition: border-color 0.3s, transform 0.3s;
+      border: 1.5px solid rgba(243, 196, 0, 0.5);
+      transition: border-color 0.2s, transform 0.2s;
       aspect-ratio: 16 / 9;
-      min-height: 220px;
+      min-height: auto;
     }
+
+    .smart-image-wrapper:hover {
+      border-color: var(--gold);
+      transform: translateY(-2px);
+    }
+
     .smart-img, #imageFallback {
       position: absolute;
       top: 0;
@@ -136,120 +230,641 @@
       width: 100%;
       height: 100%;
     }
-    .smart-image-wrapper:hover { border-color: var(--gold); transform: translateY(-3px); }
-    .smart-img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .image-slot-badge { position: absolute; bottom: 12px; right: 12px; background: rgba(10, 17, 32, 0.85); border: 1px solid var(--glass-border); color: var(--gold); padding: 5px 12px; font-size: 0.72rem; font-weight: 700; border-radius: 6px; letter-spacing: 0.5px; backdrop-filter: blur(4px); pointer-events: none; }
 
-    /* Base Glass Widget Style */
-    .widget { background: var(--bg-surface); border: 1px solid var(--glass-border); border-radius: 24px; padding: 28px; box-shadow: 0 20px 40px rgba(0,0,0,0.35); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: flex-start; transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
-    .estimator-widget:hover { transform: translateY(-5px); border-color: var(--gold); box-shadow: 0 25px 50px rgba(0,0,0,0.45), 0 0 25px rgba(245, 158, 11, 0.15); }
-    
-    .widget-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 22px; }
-    .widget-header h2 { font-size: 1.25rem; font-weight: 700; }
-    .status-dot { background: rgba(16, 185, 129, 0.2); color: var(--accent-green); border: 1px solid rgba(16, 185, 129, 0.3); font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; display: flex; align-items: center; gap: 6px; }
-    .status-dot::before { content: ''; width: 6px; height: 6px; background: var(--accent-green); border-radius: 50%; box-shadow: 0 0 10px var(--accent-green); }
-
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .field { margin-bottom: 15px; }
-    .field label { display: block; font-size: 0.78rem; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
-    .select { width: 100%; height: 48px; padding: 0 14px; background: rgba(0,0,0,0.35); border: 1px solid var(--glass-border); border-radius: 12px; color: var(--text-main); font-size: 0.95rem; font-weight: 600; outline: none; transition: all 0.2s; -webkit-appearance: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23F59E0B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 38px; }
-    .select:focus { border-color: var(--gold); background-color: rgba(0,0,0,0.5); }
-    .select option { background: #1E1B4B; color: #fff; }
-
-    .price-box { background: rgba(0,0,0,0.35); border: 1px dashed rgba(245, 158, 11, 0.4); border-radius: 14px; padding: 18px; text-align: center; margin: 18px 0; }
-    .price-title { font-size: 0.75rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-    .price-val { font-size: 2.1rem; font-weight: 800; color: var(--gold); margin: 2px 0; text-shadow: 0 0 20px rgba(245, 158, 11, 0.2); }
-    .price-sub { font-size: 0.72rem; color: var(--text-muted); }
-
-    .btn-action { width: 100%; height: 52px; background: linear-gradient(135deg, var(--gold), #D97706); color: #000; border: none; border-radius: 14px; font-size: 1.05rem; font-weight: 800; cursor: pointer; transition: all 0.25s; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 10px 25px var(--gold-glow); }
-    .btn-action:hover { transform: translateY(-2px); box-shadow: 0 15px 35px var(--gold-glow); }
-
-    /* New Live Corridor Monitor (3-Grid Dashboard) */
-    .dashboard-grid { max-width: 1400px; margin: 20px auto 70px; padding: 0 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 24px; }
-    .mini-widget { padding: 24px; justify-content: space-between; }
-    .mini-widget:hover { border-color: var(--gold); transform: translateY(-4px); }
-    .mini-widget-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; font-size: 1.05rem; font-weight: 700; color: var(--text-main); position: relative; padding-bottom: 8px; border-bottom: 1px solid var(--glass-border); }
-    
-    /* Corridor Status Specifics */
-    .corridor-road-status { display: flex; flex-direction: column; gap: 14px; }
-    .status-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; }
-    .status-label { color: var(--text-muted); display: flex; align-items: center; gap: 8px; }
-    .status-badge { padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; background: rgba(16, 185, 129, 0.15); color: var(--accent-green); border: 1px solid rgba(16, 185, 129, 0.3); }
-    
-    /* Airport Transit Widget */
-    .airport-box { background: rgba(0,0,0,0.25); border-radius: 12px; padding: 14px; margin-top: 6px; }
-    .airport-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 0.88rem; }
-    .airport-row:last-child { margin-bottom: 0; }
-    .terminal-tag { background: rgba(59, 130, 246, 0.2); color: #60A5FA; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
-
-    /* Weather Widget */
-    .weather-info { display: flex; align-items: center; justify-content: space-between; margin: 10px 0; }
-    .weather-temp { font-size: 2.4rem; font-weight: 800; color: var(--text-main); }
-    .weather-desc { display: flex; flex-direction: column; text-align: right; }
-    .weather-desc strong { color: var(--gold); font-size: 1.05rem; }
-    .weather-desc span { color: var(--text-muted); font-size: 0.8rem; }
-    .weather-extra { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.82rem; color: var(--text-soft); border-top: 1px solid var(--glass-border); padding-top: 14px; }
-
-    /* General Sections */
-    .section { max-width: 1400px; margin: 70px auto; padding: 0 5%; }
-    .sec-title { text-align: center; margin-bottom: 45px; }
-    .sec-title h2 { font-size: 2.4rem; font-weight: 800; margin-bottom: 10px; }
-    .sec-title h2 span { color: var(--gold); }
-    .sec-title p { color: var(--text-muted); font-size: 1.05rem; max-width: 750px; margin: auto; }
-
-    /* Fleet Cards */
-    .fleet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
-    .fleet-card { background: var(--bg-surface); border: 1px solid var(--glass-border); border-radius: 20px; padding: 28px; transition: all 0.25s ease; position: relative; overflow: hidden; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-    .fleet-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0; transition: 0.3s; }
-    .fleet-card:hover { border-color: rgba(245, 158, 11, 0.4); transform: translateY(-5px); background: rgba(255, 255, 255, 0.05); }
-    .fleet-card:hover::before { opacity: 1; }
-    .fleet-tier { font-size: 0.72rem; font-weight: 800; color: var(--gold); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 6px; }
-    .fleet-name { font-size: 1.6rem; font-weight: 800; margin-bottom: 12px; }
-    .fleet-specs { display: flex; gap: 12px; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--glass-border); flex-wrap: wrap; }
-    .fleet-desc { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 24px; min-height: 48px; }
-
-    /* FAQ Section */
-    .faq-container { max-width: 880px; margin: auto; }
-    .faq-item { background: var(--bg-surface); border: 1px solid var(--glass-border); border-radius: 14px; margin-bottom: 14px; backdrop-filter: blur(10px); }
-    .faq-item summary { font-weight: 700; font-size: 1.05rem; padding: 18px 22px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; outline: none; }
-    .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item summary::after { content: '+'; color: var(--gold); font-size: 1.4rem; transition: transform 0.25s ease; }
-    .faq-item[open] summary::after { transform: rotate(45deg); }
-    .faq-item p { color: var(--text-muted); margin: 0; padding: 0 22px 20px; font-size: 0.94rem; line-height: 1.65; }
-
-    /* Driver Banner */
-    .driver-banner { background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(245,158,11,0.1) 100%); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: var(--radius-lg); padding: 45px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 25px; backdrop-filter: blur(12px); box-shadow: 0 20px 40px rgba(0,0,0,0.25); }
-    .driver-text h3 { font-size: 1.8rem; font-weight: 800; margin-bottom: 8px; }
-    .driver-text p { color: var(--text-muted); font-size: 1rem; max-width: 580px; }
-
-    /* Footer */
-    .footer { background: rgba(10, 17, 32, 0.9); backdrop-filter: blur(20px); border-top: 1px solid var(--glass-border); padding: 55px 5% 30px; margin-top: 60px; }
-    .footer-grid { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 35px; }
-    .footer-col h4 { color: var(--text-main); margin-bottom: 20px; font-size: 1.05rem; font-weight: 800; }
-    .footer-col a, .footer-col p { display: block; color: var(--text-muted); text-decoration: none; margin-bottom: 10px; font-size: 0.92rem; transition: 0.2s; }
-    .footer-col a:hover { color: var(--gold); transform: translateX(4px); }
-    .footer-bottom { max-width: 1400px; margin: 35px auto 0; padding-top: 20px; border-top: 1px solid var(--glass-border); text-align: center; color: var(--text-muted); font-size: 0.82rem; }
-
-    /* Sticky Mobile Action Bar */
-    .mobile-action-bar { display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(16px); border-top: 1px solid var(--glass-border); padding: 10px 5%; z-index: 9999; box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5); gap: 10px; }
-    .mobile-btn { flex: 1; height: 48px; border-radius: 12px; font-weight: 700; font-size: 0.92rem; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px; border: none; cursor: pointer; }
-    .mobile-btn-call { background: rgba(255,255,255,0.05); color: var(--text-main); border: 1px solid var(--glass-border); }
-    .mobile-btn-wa { background: linear-gradient(135deg, var(--gold), #D97706); color: #000; box-shadow: 0 0 15px var(--gold-glow); }
-
-    @media (max-width: 1024px) {
-      .hero { grid-template-columns: 1fr; gap: 35px; }
-      .hero-text h1 { font-size: 2.75rem; }
+    .smart-img {
+      object-fit: cover;
+      display: block;
     }
-    @media (max-width: 768px) {
-      .nav-actions { display: none; }
-      .mobile-action-bar { display: flex; }
-      body { padding-bottom: 75px; background: #0A1120; }
-      .driver-banner { padding: 30px; text-align: center; justify-content: center; }
-      .footer { padding: 40px 6% 90px; }
-      .widget, .fleet-card, .navbar, .footer { backdrop-filter: none; -webkit-backdrop-filter: none; }
+
+    .image-slot-badge {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(6, 13, 26, 0.9);
+      border: 1px solid var(--purple-border);
+      color: var(--gold);
+      padding: 4px 10px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      border-radius: 6px;
+      pointer-events: none;
+      letter-spacing: 0.5px;
+      z-index: 2;
     }
-    @media (hover: none) and (pointer: coarse) {
-      .widget:hover, .mini-widget:hover, .fleet-card:hover { transform: none !important; }
+
+    .trust-badges {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--purple-border);
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .badge::before {
+      content: '✓';
+      color: var(--gold);
+      font-weight: 800;
+    }
+
+    /* ==========================================
+       ESTIMATOR WIDGET
+       ========================================== */
+    .widget {
+      background: var(--bg-surface);
+      border: 1px solid rgba(243, 196, 0, 0.25);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .widget:hover { 
+      border-color: var(--gold);
+    }
+
+    .widget-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .widget-header h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .status-dot {
+      background: #10b981;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .status-dot::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .select {
+      width: 100%;
+      height: 48px;
+      padding: 0 14px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--purple-border);
+      border-radius: 10px;
+      color: var(--text-main);
+      font-size: 0.95rem;
+      font-weight: 600;
+      outline: none;
+      transition: border-color 0.2s;
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f3c400' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 38px;
+    }
+
+    .select:focus {
+      border-color: var(--gold);
+    }
+
+    .select option {
+      background: var(--bg-surface);
+      color: var(--text-main);
+    }
+
+    .price-box {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px dashed rgba(243, 196, 0, 0.3);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      margin: 18px 0;
+    }
+
+    .price-title {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .price-val {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--gold);
+      margin: 2px 0;
+    }
+
+    .price-sub {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .btn-action {
+      width: 100%;
+      height: 50px;
+      background: var(--gold);
+      color: var(--bg-dark);
+      border: none;
+      border-radius: 12px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.15s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-action:hover {
+      background: var(--gold-hover);
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================
+       DASHBOARD WIDGETS
+       ========================================== */
+    .dashboard-grid {
+      max-width: 1350px;
+      margin: 20px auto 60px;
+      padding: 0 5%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 20px;
+    }
+
+    .mini-widget {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .mini-widget-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--purple-border);
+    }
+
+    .corridor-road-status {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .status-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+
+    .status-label {
+      color: var(--text-muted);
+    }
+
+    .status-badge {
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--accent-green);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .airport-box {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      padding: 12px;
+      margin-top: 6px;
+    }
+
+    .airport-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 0.88rem;
+    }
+
+    .airport-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .terminal-tag {
+      background: rgba(59, 130, 246, 0.2);
+      color: #60A5FA;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    .weather-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    .weather-temp {
+      font-size: 2.3rem;
+      font-weight: 800;
+    }
+
+    .weather-desc {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+    }
+
+    .weather-desc strong {
+      color: var(--gold);
+      font-size: 1.05rem;
+    }
+
+    .weather-desc span {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    .weather-extra {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      font-size: 0.82rem;
+      color: var(--text-soft);
+      border-top: 1px solid var(--purple-border);
+      padding-top: 12px;
+    }
+
+    /* ==========================================
+       SECTIONS & FLEET
+       ========================================== */
+    .section {
+      max-width: 1350px;
+      margin: 70px auto;
+      padding: 0 5%;
+    }
+
+    .sec-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .sec-title h2 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .sec-title h2 span {
+      color: var(--gold);
+    }
+
+    .sec-title p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .fleet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .fleet-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--purple-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+
+    .fleet-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+    }
+
+    .fleet-tier {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .fleet-name {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .fleet-specs {
+      display: flex;
+      gap: 12px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--purple-border);
+      flex-wrap: wrap;
+    }
+
+    .fleet-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+      min-height: 44px;
+    }
+
+    /* ==========================================
+       FAQ SECTION
+       ========================================== */
+    .faq-container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--bg-surface);
+      border: 1px solid var(--purple-border);
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .faq-item summary {
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 18px 20px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: '+';
+      color: var(--gold);
+      font-size: 1.4rem;
+      transition: transform 0.2s;
+    }
+
+    .faq-item[open] summary::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-item p {
+      color: var(--text-muted);
+      padding: 0 20px 18px;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    /* ==========================================
+       DRIVER ONBOARDING & FOOTER
+       ========================================== */
+    .driver-banner {
+      background: var(--bg-surface);
+      border: 1px solid rgba(243, 196, 0, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .driver-text h3 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .driver-text p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 580px;
+    }
+
+    .footer {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--purple-border);
+      padding: 50px 5% 30px;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      max-width: 1350px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 35px;
+    }
+
+    .footer-col h4 {
+      color: var(--text-main);
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+      font-weight: 800;
+    }
+
+    .footer-col a, .footer-col p {
+      display: block;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .footer-col a:hover {
+      color: var(--gold);
+    }
+
+    .footer-about {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .footer-bottom {
+      max-width: 1350px;
+      margin: 35px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid var(--purple-border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+    }
+
+    .mobile-action-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(20, 11, 36, 0.96);
+      border-top: 1px solid var(--purple-border);
+      padding: 10px 16px;
+      z-index: 999;
+      gap: 10px;
+    }
+
+    .mobile-btn {
+      flex: 1;
+      height: 48px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-btn-call {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--purple-border);
+    }
+
+    .mobile-btn-wa {
+      background: var(--gold);
+      color: var(--bg-dark);
+    }
+
+    /* ==========================================
+       MOBILE RESPONSIVE BREAKPOINTS (ZERO OVERFLOW)
+       ========================================== */
+    @media (max-width: 900px) {
+      html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+      }
+
+      body {
+        padding-bottom: 70px;
+      }
+
+      .navbar {
+        padding: 14px 5%;
+      }
+
+      .nav-actions {
+        display: none;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 20px auto 40px;
+        width: 100%;
+      }
+
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+
+      /* Forces fare estimator dropdowns to stack vertically on phone screens */
+      .grid-2 {
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+      }
+
+      /* Stacks dashboard and fleet cards cleanly */
+      .dashboard-grid, .fleet-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      /* Allows image box to scale naturally without pushing screen width */
+      .smart-image-wrapper {
+        min-height: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .weather-extra {
+        grid-template-columns: 1fr;
+      }
+
+      .driver-banner {
+        padding: 28px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .mobile-action-bar {
+        display: flex;
+      }
+
+      .sec-title h2 {
+        font-size: 1.8rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
     }
   </style>
 
@@ -335,8 +950,8 @@
       TRASKER <span>CABS</span>
     </a>
     <div class="nav-actions">
-      <a href="tel:+918218602998" class="contact-number" aria-label="Call Trasker Cabs">📞 +91 8218602998</a>
-      <a href="index.html" class="btn-outline">All Corridors</a>
+      <a href="tel:+918218602998" class="contact-number">📞 +91 8218602998</a>
+      <button class="btn-outline" onclick="handleButtonClick('driver_attach')">Attach Your Taxi</button>
       <button class="btn-gold" onclick="handleButtonClick('general_support')">WhatsApp Helpdesk</button>
     </div>
   </nav>
@@ -345,20 +960,13 @@
     <!-- Hero Main Section -->
     <header class="hero">
       <div class="hero-text">
-        <div class="trust-badges">
-          <div class="badge">Direct IGI Airport Drops</div>
-          <div class="badge">Delhi-Meerut Expressway</div>
-          <div class="badge">Hill-Certified Drivers</div>
-        </div>
-        
         <h1>Express <span>Dehradun to Delhi</span> Cab Service</h1>
         <p>Reliable downhill transit from Uttarakhand to Delhi NCR. Enjoy fixed highway fares, clean air-conditioned cabs, and direct terminal drops at Indira Gandhi International Airport (IGI).</p>
 
         <!-- Smart SEO Image Slot (Zero CLS, High Performance) -->
         <div class="smart-image-wrapper">
-          <!-- Replace 'dehradun-to-delhi-cab.webp' with your actual image path -->
           <img 
-            src="dehradun-to-delhi-cab.webp" 
+            src="p.webp" 
             alt="Trasker Cabs fleet traveling on the Dehradun to Delhi highway" 
             class="smart-img"
             width="1200" 
@@ -367,17 +975,24 @@
             decoding="async"
             onerror="this.style.display='none'; document.getElementById('imageFallback').style.display='flex';">
           
-          <div id="imageFallback" style="display:none; width:100%; height:100%; min-height:220px; flex-direction:column; align-items:center; justify-content:center; padding:30px; text-align:center; background:var(--bg-card); gap:10px;">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+          <div id="imageFallback" style="display:none; flex-direction:column; align-items:center; justify-content:center; padding:30px; text-align:center; background:var(--bg-card); gap:10px;">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#f3c400" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
             <span style="font-weight:700; color:var(--gold); font-size:0.95rem;">Dehradun to Delhi Express Fleet</span>
             <span style="font-size:0.78rem; color:var(--text-muted);">Direct doorstep pickups across Dehradun, Rajpur Road & ISBT</span>
           </div>
           <div class="image-slot-badge">HIGHWAY CORRIDOR</div>
         </div>
+
+        <!-- Trust Badges positioned cleanly below the image to prevent mobile clipping -->
+        <div class="trust-badges" style="margin-top: 18px;">
+          <div class="badge">Direct IGI Airport Drops</div>
+          <div class="badge">Delhi-Meerut Expressway</div>
+          <div class="badge">Hill-Certified Drivers</div>
+        </div>
       </div>
 
       <!-- Interactive Fare Estimator Widget -->
-      <div class="widget estimator-widget">
+      <div class="widget">
         <div class="widget-header">
           <h2>Express Fare Estimator</h2>
           <div class="status-dot">Expressway Open</div>
@@ -436,18 +1051,18 @@
         <div class="corridor-road-status">
           <div class="status-row">
             <span class="status-label">📍 Mohand Pass / Hills</span>
-            <span class="status-badge" style="background:rgba(16,185,129,0.15); color:#10B981;">Clear Transit</span>
+            <span class="status-badge">Clear Transit</span>
           </div>
           <div class="status-row">
             <span class="status-label">⚡ Delhi-Meerut Exp.</span>
-            <span class="status-badge" style="background:rgba(59,130,246,0.15); color:#60A5FA;">Fast Traffic</span>
+            <span class="status-badge" style="background:rgba(59,130,246,0.15); color:#60A5FA; border-color:rgba(59,130,246,0.3);">Fast Traffic</span>
           </div>
           <div class="status-row">
             <span class="status-label">🚧 UP/Delhi Border</span>
-            <span class="status-badge" style="background:rgba(16,185,129,0.15); color:#10B981;">FastTag Active</span>
+            <span class="status-badge">FastTag Active</span>
           </div>
         </div>
-        <div style="margin-top:16px; font-size:0.78rem; color:var(--text-soft); border-top:1px solid var(--glass-border); padding-top:10px;">
+        <div style="margin-top:16px; font-size:0.78rem; color:var(--text-soft); border-top:1px solid var(--purple-border); padding-top:10px;">
           ⏱️ Est. Travel Time: <strong>4 hrs 45 mins</strong> via elevated expressway.
         </div>
       </div>
@@ -573,18 +1188,18 @@
     </section>
   </main>
 
-  <!-- Footer Link Ecosystem -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-col" style="grid-column: span 2;">
         <h4>About Trasker Cabs Route Desk</h4>
-        <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">
+        <p class="footer-about">
           Trasker Cabs operates specialized intercity taxi corridors connecting Dehradun, Mussoorie, Rishikesh, and Haridwar directly with Delhi NCR, Gurgaon, Noida, and IGI Airport. We guarantee verified commercial drivers, zero surge pricing, and 24x7 WhatsApp dispatch support.
         </p>
       </div>
       <div class="footer-col">
         <h4>Popular Corridors</h4>
-        <a href="delhi-to-dehradun.html">Delhi to Dehradun Cab</a>
+        <a href="https://traskercabs.github.io/Delhi-Dehradun/">Delhi to Dehradun Cab</a>
         <a href="dehradun-to-delhi.html">Dehradun to Delhi Cab</a>
         <a href="dehradun-to-mussoorie.html">Dehradun to Mussoorie</a>
         <a href="dehradun-to-noida.html">Dehradun to Noida Cab</a>
@@ -602,7 +1217,7 @@
     </div>
   </footer> 
 
-  <!-- Mobile Floating Action Bar -->
+  <!-- Sticky Mobile Action Bar -->
   <div class="mobile-action-bar" aria-label="Mobile Contact Actions">
     <a href="tel:+918218602998" class="mobile-btn mobile-btn-call" aria-label="Call Trasker Cabs">
       📞 Call Desk
@@ -619,14 +1234,12 @@
       driverOnboardingUrl: "https://forms.gle/oJGsSMvQZQ8EfwLWA"
     };
 
-    // Centralized Conversion Tracker
     function trackConversion(eventName, eventData = {}) {
       if (typeof gtag === 'function') {
         gtag('event', eventName, eventData);
       }
     }
 
-    // Button & Action Handler
     function handleButtonClick(actionType, extraData = "") {
       const waNum = APP_LINKS.whatsappNumber;
       
@@ -647,7 +1260,7 @@
           const vehicleSelect = document.getElementById('vehicle');
           const vehicleFullName = vehicleSelect.options[vehicleSelect.selectedIndex].text;
           const vehicleType = vehicleFullName.split(' (')[0]; 
-          const price = document.getElementById('priceDisplay').innerText;
+          const price = document.getElementById('priceDisplay').textContent;
           
           trackConversion('generate_lead', {
             currency: 'INR',
@@ -665,7 +1278,7 @@
 
         case 'fleet':
           trackConversion('view_item_list', { item_list_name: 'fleet_showcase', selected_vehicle: extraData });
-          const widgetEl = document.querySelector('.estimator-widget');
+          const widgetEl = document.querySelector('.widget');
           widgetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
           document.getElementById('vehicle').value = extraData;
           calculate();
@@ -673,7 +1286,6 @@
       }
     }
 
-    // Fare Estimation Matrix (Dehradun to Delhi Focused)
     const rates = {
       "Dehradun-Delhi": { sedan: 3499, suv: 4500, prime: 5500 },
       "Dehradun-IGIAirport": { sedan: 3699, suv: 4700, prime: 5700 },
@@ -687,7 +1299,7 @@
       "Rishikesh-IGIAirport": { sedan: 3799, suv: 4800, prime: 5800 }
     };
 
-function calculate() {
+    function calculate() {
       const p = document.getElementById('pickup').value;
       const d = document.getElementById('dropoff').value;
       const v = document.getElementById('vehicle').value;
@@ -702,20 +1314,16 @@ function calculate() {
       let rate = rates[key]?.[v];
 
       if (!rate) {
-        // Fallback calculation for custom combinations
         let baseRate = 3499;
         if (v === 'suv') baseRate = 4500;
         if (v === 'prime') baseRate = 5500;
         rate = baseRate;
       }
 
-  
-
       const upperRate = rate + 500;
       display.textContent = `₹${rate.toLocaleString('en-IN')} - ₹${upperRate.toLocaleString('en-IN')}`;
     }
 
-// Lightweight Destination Weather Fetcher (Lazy Loaded via IntersectionObserver)
     function loadDelhiWeather() {
       const apiKey = "af21b18c73ad12db5b873b1067ec6b00";
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=New%20Delhi&appid=${apiKey}&units=metric`, {
@@ -737,35 +1345,47 @@ function calculate() {
             document.getElementById("weatherSub").textContent = cond;
           }
         })
-        .catch(() => {
-          // Silent fallback keeps default HTML values intact if offline
-        });
+        .catch(() => {});
     }
 
-    // Only run the fare calculation on initial load
     window.addEventListener("DOMContentLoaded", () => {
       calculate();
     });
 
-    // Zero-Critical-Path Lazy Loader for Weather Widget
     window.addEventListener("load", () => {
       const weatherWidget = document.querySelector(".weather-info");
-      if (!weatherWidget) return;
-
-      const observer = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            if ('requestIdleCallback' in window) {
-              window.requestIdleCallback(loadDelhiWeather, { timeout: 2000 });
-            } else {
-              setTimeout(loadDelhiWeather, 300);
+      if (weatherWidget) {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              if ('requestIdleCallback' in window) {
+                window.requestIdleCallback(loadDelhiWeather, { timeout: 2000 });
+              } else {
+                setTimeout(loadDelhiWeather, 300);
+              }
+              obs.unobserve(entry.target);
             }
-            obs.unobserve(entry.target);
-          }
-        });
-      }, { rootMargin: "150px" });
+          });
+        }, { rootMargin: "150px" });
+        observer.observe(weatherWidget);
+      }
+    });
+  </script>
+  <!-- Asynchronous Google Tag Manager via window.load to prevent initial blocking -->
+  <script>
+    window.addEventListener("load", () => {
+      const s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=G-5EM9KRMB0L";
+      document.head.appendChild(s);
 
-      observer.observe(weatherWidget);
+      s.onload = () => {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag("js", new Date());
+        gtag("config", "G-5EM9KRMB0L");
+      };
     });
   </script>
 </body>
