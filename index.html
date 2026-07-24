@@ -14,9 +14,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   
   <!-- SEO Meta Tags -->
-  <title>Delhi to Mussoorie Cab Booking | Premium Taxi - Trasker Cabs</title>
-  <meta name="description" content="Book affordable Delhi to Mussoorie cabs with Trasker Cabs. Premium Sedan, Ertiga SUV, and Innova Crysta options. 24x7 hill-certified drivers, fixed highway fares, and zero surge pricing.">
-  <link rel="canonical" href="https://traskercabs.github.io/Trasker-Cabs/delhi-to-mussoorie.html">
+  <title>Delhi to Rishikesh Cab Booking | Premium Taxi - Trasker Cabs</title>
+  <meta name="description" content="Book affordable Delhi to Rishikesh cabs with Trasker Cabs. Premium Sedan, Ertiga SUV, and Innova Crysta options. 24x7 experienced highway drivers, fixed fares, and zero surge pricing.">
+  <link rel="canonical" href="https://traskercabs.github.io/Trasker-Cabs/delhi-to-rishikesh.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,10 +24,9 @@
   
   <style>
     :root {
-      /* ========= Brand Colors ========= */
-      --bg-gradient-1: #0D1322;
-      --bg-gradient-2: #131B2E;
-      --bg-gradient-3: #221538;
+     --bg-gradient-1: #0F172A; /* Dark Slate Blue */
+  --bg-gradient-2: #1E1B4B; /* Deep Purple */
+  --bg-gradient-3: #170F2A; /* Dark Violet */
 
       /* ========= Glass Surfaces ========= */
       --bg-surface: rgba(15, 23, 42, 0.55);
@@ -40,7 +39,7 @@
       --gold-glow: rgba(245, 158, 11, 0.35);
 
       /* ========= Secondary Accents ========= */
-      --accent-blue: #3B82F6;
+      --accent-blue: #06B6D4; /* Cyan tint */
       --accent-green: #10B981;
       --accent-purple: #8B5CF6;
 
@@ -58,9 +57,9 @@
     
     body { 
       background: 
-        radial-gradient(circle at 15% 15%, rgba(139, 92, 246, 0.18) 0%, transparent 45%),
-        radial-gradient(circle at 85% 45%, rgba(245, 158, 11, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 50% 85%, rgba(59, 130, 246, 0.15) 0%, transparent 55%),
+        radial-gradient(circle at 20% 20%, rgba(16, 185, 129, 0.12) 0%, transparent 45%), /* Emerald Glow */
+        radial-gradient(circle at 80% 40%, rgba(245, 158, 11, 0.12) 0%, transparent 50%), /* Gold Glow */
+        radial-gradient(circle at 50% 80%, rgba(6, 182, 212, 0.15) 0%, transparent 55%), /* Cyan Glow */
         linear-gradient(135deg, var(--bg-gradient-1), var(--bg-gradient-2), var(--bg-gradient-3));
       background-attachment: fixed;
       background-size: 200% 200%;
@@ -77,15 +76,15 @@
       100% { background-position: 0% 50%; }
     }
 
-    /* Ambient Background Orbs for visual depth */
+    /* Ambient Background Orbs */
     .bg-glow-orb-1 {
       position: fixed; width: 350px; height: 350px; border-radius: 50%;
-      background: rgba(245, 158, 11, 0.08); filter: blur(90px);
+      background: rgba(16, 185, 129, 0.08); filter: blur(90px);
       top: -50px; left: -50px; pointer-events: none; z-index: 0;
     }
     .bg-glow-orb-2 {
       position: fixed; width: 400px; height: 400px; border-radius: 50%;
-      background: rgba(139, 92, 246, 0.1); filter: blur(100px);
+      background: rgba(6, 182, 212, 0.1); filter: blur(100px);
       bottom: 10%; right: -50px; pointer-events: none; z-index: 0;
     }
 
@@ -117,7 +116,7 @@
     /* Base Glass Widget Style */
     .widget { background: var(--bg-surface); border: 1px solid var(--glass-border); border-radius: 24px; padding: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.35); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content:flex-start; }
     
-    /* Estimator Widget - Prominent Golden Border Added */
+    /* Estimator Widget */
     .estimator-widget {
       border: 2px solid rgba(245, 158, 11, 0.55) !important;
       box-shadow: 0 20px 45px rgba(0,0,0,0.45), 0 0 25px rgba(245, 158, 11, 0.18) !important;
@@ -148,40 +147,72 @@
     .btn-action { width: 100%; background: linear-gradient(135deg, var(--gold), #D97706); color: #000; padding: 16px; border: none; border-radius: 14px; font-size: 1.1rem; font-weight: 800; cursor: pointer; transition: all 0.3s; text-align: center; text-decoration: none; display: block; box-shadow: 0 10px 25px var(--gold-glow); }
     .btn-action:hover { transform: translateY(-3px); box-shadow: 0 15px 35px var(--gold-glow); }
 
-    /* Dashboard Grid (STRICTLY 2 WIDGETS) */
+    /* Dashboard Grid */
     .dashboard-grid { max-width: 1400px; margin: 0 auto 60px; padding: 0 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
-    .mini-widget { padding: 26px; }
-    .mini-widget-header { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; font-size: 1.1rem; font-weight: 700; color: var(--text-main); position: relative; }
-    .mini-widget-header::after { content: ""; position: absolute; left: 0; bottom: -8px; width: 0; height: 2px; background: var(--gold); transition: width .35s ease; }
-    .widget:hover .mini-widget-header::after { width: 100%; }
-
-    /* Widget 1: Weather Widget */
-    .weather-info { display: flex; align-items: center; gap: 40px; }
-    .weather-temp { font-size: 2.5rem; font-weight: 800; background: linear-gradient(180deg, #fff, #94A3B8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .weather-desc { display: flex; flex-direction: column; }
-    .weather-desc strong { color: var(--accent-blue); font-size: 1.1rem; }
-    .weather-desc span { color: var(--text-muted); font-size: .85rem; }
-    .weather-icon { display: flex; justify-content: center; margin: 10px 0; }
-    .weather-icon img { width: 110px; height: 110px; transition: .5s ease; }
-    .weather-extra { margin-top: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 14px; color: #d8d8d8; }
+    .mini-widget { padding: 26px; transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; border-radius: 20px; }
+    .mini-widget-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; font-size: 1.1rem; font-weight: 700; color: var(--text-main); position: relative; }
+    .header-text-group { display: flex; align-items: center; gap: 10px; }
     
-    .weather-widget { transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; border-radius: 20px; }
-    .weather-widget:hover { border-color: var(--gold); }
-    .weather-widget:hover .weather-temp { color: var(--gold); text-shadow: 0 0 12px rgba(212,175,55,.35); }
-    .weather-widget:hover .weather-icon img { transform: rotate(15deg); }
+    .mini-widget:hover { border-color: rgba(245, 158, 11, 0.6); transform: translateY(-4px); box-shadow: 0 15px 35px rgba(0,0,0,0.4); }
 
-    /* Widget 2: NEW Live Hill Transit & Altitude Tracker Widget */
-    .transit-widget { transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; border-radius: 20px; }
-    .transit-widget:hover { border-color: var(--gold); transform: translateY(-6px); }
-    .transit-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 15px; }
-    .stat-card { background: rgba(0,0,0,0.25); border: 1px solid var(--glass-border); border-radius: 14px; padding: 12px; text-align: center; }
-    .stat-val { font-size: 1.25rem; font-weight: 800; color: var(--gold); }
-    .stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; margin-top: 2px; }
+    /* NEW Widget 1: Route Timeline */
+    .timeline-container { position: relative; margin-top: 10px; padding-left: 20px; display: flex; flex-direction: column; gap: 16px; }
+    .timeline-container::before {
+      content: ''; position: absolute; left: 6px; top: 8px; bottom: 10px;
+      width: 2px; background: linear-gradient(to bottom, var(--accent-blue), var(--gold), var(--accent-green));
+      opacity: 0.6;
+    }
+    .timeline-item { position: relative; }
+    .timeline-item::before {
+      content: ''; position: absolute; left: -20.5px; top: 4px;
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--bg-surface); border: 2px solid var(--text-soft);
+      transition: all 0.3s ease; z-index: 2;
+    }
+    .timeline-item.active::before { border-color: var(--gold); background: var(--gold); box-shadow: 0 0 10px var(--gold-glow); }
+    .timeline-item.dest::before { border-color: var(--accent-green); background: var(--accent-green); box-shadow: 0 0 10px rgba(16,185,129,0.4); }
     
-    .altitude-bar { margin-top: 18px; background: rgba(0,0,0,0.3); border-radius: 12px; padding: 12px; border: 1px solid var(--glass-border); }
-    .alt-header { display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--text-soft); margin-bottom: 8px; }
-    .alt-progress-bg { width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; position: relative; }
-    .alt-progress-fill { height: 100%; width: 100%; background: linear-gradient(90deg, var(--accent-blue), var(--gold)); border-radius: 10px; }
+    .tl-title { font-size: 0.95rem; font-weight: 700; color: var(--text-main); line-height: 1.2; }
+    .tl-desc { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+
+    /* NEW Widget 2: Fleet Radar */
+    .radar-body { display: flex; align-items: center; gap: 24px; margin-top: 10px; }
+    .radar-visual {
+      position: relative; width: 90px; height: 90px; border-radius: 50%;
+      border: 2px solid rgba(16, 185, 129, 0.3); background: rgba(0, 0, 0, 0.4);
+      box-shadow: inset 0 0 20px rgba(16,185,129,0.1), 0 0 15px rgba(16,185,129,0.15);
+      overflow: hidden; flex-shrink: 0;
+    }
+    .radar-visual::before {
+      content: ''; position: absolute; top: 50%; left: 0; width: 100%; height: 1px; background: rgba(16,185,129,0.3);
+    }
+    .radar-visual::after {
+      content: ''; position: absolute; top: 0; left: 50%; width: 1px; height: 100%; background: rgba(16,185,129,0.3);
+    }
+    .radar-sweep {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: conic-gradient(from 0deg, transparent 60%, rgba(16, 185, 129, 0.7) 100%);
+      animation: sweep 2.5s linear infinite; border-radius: 50%; transform-origin: center;
+    }
+    @keyframes sweep { 100% { transform: rotate(360deg); } }
+    
+    .radar-blip {
+      position: absolute; width: 5px; height: 5px; background: var(--gold);
+      border-radius: 50%; box-shadow: 0 0 8px var(--gold);
+      animation: blip 2.5s infinite; opacity: 0;
+    }
+    .blip-1 { top: 30%; left: 60%; animation-delay: 0.5s; }
+    .blip-2 { top: 65%; left: 35%; animation-delay: 1.2s; background: var(--accent-blue); box-shadow: 0 0 8px var(--accent-blue); }
+    .blip-3 { top: 40%; left: 25%; animation-delay: 2.0s; }
+    
+    @keyframes blip { 0%, 100% { opacity: 0; transform: scale(0.5); } 10% { opacity: 1; transform: scale(1.5); } 30% { opacity: 0; transform: scale(0.8); } }
+
+    .radar-stats { flex-grow: 1; }
+    .radar-stat-box { display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.25); border: 1px solid var(--glass-border); padding: 10px 14px; border-radius: 12px; margin-bottom: 8px; }
+    .rs-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; }
+    .rs-val { font-size: 1rem; font-weight: 800; color: var(--text-main); }
+    .rs-highlight { color: var(--accent-green); }
+    .rs-gold { color: var(--gold); }
 
     /* Image Placement Showcase Section */
     .image-showcase-section { max-width: 1400px; margin: 40px auto 70px; padding: 0 5%; }
@@ -261,55 +292,45 @@
     }
 
     @media (hover: none) and (pointer: coarse) {
-      .widget:hover, .transit-widget:hover { transform: none !important; }
+      .widget:hover, .mini-widget:hover { transform: none !important; }
     }
 
     .custom-route-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 28px;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #F59E0B, #D97706);
+      color: #060606;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 700;
+      border: 1px solid rgba(245,158,11,.35);
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all .3s ease;
+      box-shadow: 0 10px 30px rgba(245,158,11,.22), inset 0 1px 0 rgba(255,255,255,.18);
+    }
 
-    margin-top: 28px;
-    padding: 14px 28px;
+    .custom-route-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(245,158,11,.35), inset 0 1px 0 rgba(255,255,255,.25);
+    }
 
-    background: linear-gradient(135deg, #F59E0B, #D97706);
-    color: #060606;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 700;
+    .custom-route-btn:active {
+      transform: translateY(-1px);
+    }
 
-    border: 1px solid rgba(245,158,11,.35);
-    border-radius: 14px;
+    .custom-route-btn::after {
+      content: "→";
+      transition: transform .25s ease;
+    }
 
-    cursor: pointer;
-    transition: all .3s ease;
-
-    box-shadow:
-        0 10px 30px rgba(245,158,11,.22),
-        inset 0 1px 0 rgba(255,255,255,.18);
-}
-
-.custom-route-btn:hover {
-    transform: translateY(-3px);
-    box-shadow:
-        0 16px 40px rgba(245,158,11,.35),
-        inset 0 1px 0 rgba(255,255,255,.25);
-}
-
-.custom-route-btn:active {
-    transform: translateY(-1px);
-}
-
-.custom-route-btn::after {
-    content: "→";
-    transition: transform .25s ease;
-}
-
-.custom-route-btn:hover::after {
-    transform: translateX(5px);
-}
-
+    .custom-route-btn:hover::after {
+      transform: translateX(5px);
+    }
   </style>
 
   <!-- Schema Markup (FAQPage) -->
@@ -320,26 +341,26 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Are state tolls and highway charges included in the Delhi to Mussoorie fare?",
+        "name": "Are state tolls and highway charges included in the Delhi to Rishikesh fare?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, all estimated prices include state highway toll fees, green hill taxes, driver allowances, and fuel charges."
+          "text": "Yes, all estimated prices include state highway toll fees, driver allowances, and fuel charges."
         }
       },
       {
         "@type": "Question",
-        "name": "Are all cabs equipped for steep hill driving in Mussoorie?",
+        "name": "Can I stop at Haridwar during my trip to Rishikesh?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, our entire fleet is operated by experienced, hill-certified drivers. On steep mountain bends, drivers may briefly turn off the A/C to ensure maximum engine power and vehicle safety."
+          "text": "Yes, you can request a quick stop for Haridwar Darshan or Ganga Aarti along the route. Discuss your itinerary during booking."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I request a luggage carrier for the Mussoorie trip?",
+        "name": "Can I request a luggage carrier for the Rishikesh trip?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes! If you are carrying extra bags, let us know while booking, and we will equip your cab with a luggage carrier at no extra cost, subject to availability."
+          "text": "Yes! If you are carrying extra bags or adventure gear, let us know while booking, and we will equip your cab with a luggage carrier at no extra cost, subject to availability."
         }
       }
     ]
@@ -351,7 +372,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Delhi to Mussoorie Cab Service",
+    "name": "Delhi to Rishikesh Cab Service",
     "serviceType": "Outstation Taxi Service",
     "provider": {
       "@type": "Organization",
@@ -366,16 +387,16 @@
       },
       {
         "@type": "City",
-        "name": "Mussoorie"
+        "name": "Rishikesh"
       }
     ],
-    "description": "Book direct one-way and roundtrip cab services from Delhi to Mussoorie with verified hill drivers and guaranteed fixed pricing.",
+    "description": "Book direct one-way and roundtrip cab services from Delhi to Rishikesh with verified drivers and guaranteed fixed pricing.",
     "offers": {
       "@type": "Offer",
       "priceCurrency": "INR",
       "availability": "https://schema.org/InStock"
     },
-    "url": "https://traskercabs.github.io/Trasker-Cabs/delhi-to-mussoorie.html"
+    "url": "https://traskercabs.github.io/Trasker-Cabs/delhi-to-rishikesh.html"
   }
   </script>
 </head>
@@ -403,16 +424,16 @@
     <header class="hero">
       <div class="hero-text">
         <div class="trust-badges">
-          <div class="badge">Fixed Hill Fares</div>
-          <div class="badge">Expressway & Mountain Certified</div>
+          <div class="badge">Fixed Highway Fares</div>
+          <div class="badge">Expressway Certified</div>
           <div class="badge">Doorstep Pickups Across NCR</div>
         </div>
         
-        <h1>Premium <span>Delhi to Mussoorie</span> Cab Service</h1>
-        <p>Seamless transit to the Queen of Hills via fast expressways and scenic hill routes. Experience clear transparent pricing, expert mountain-certified drivers, and luxury outstation fleets.</p>
+        <h1>Premium <span>Delhi to Rishikesh</span> Cab Service</h1>
+        <p>Seamless transit to the Yoga Capital of the World via fast expressways. Experience transparent fixed pricing, expert highway drivers, and premium outstation fleets.</p>
 
         <a
-        href="https://wa.me/918218602998?text=Hi%20Trasker%20Cabs!%20I%20want%20a%20custom%20route%20quote."
+        href="https://wa.me/918218602998?text=Hi%20Trasker%20Cabs!%20I%20want%20a%20custom%20route%20quote%20for%20Rishikesh."
         class="custom-route-btn"
         target="_blank"
         rel="noopener noreferrer">
@@ -421,11 +442,11 @@
 
       </div>
 
-      <!-- Route Special Estimator Widget (With Gold Glow Border & ₹4,499 - ₹4,999 Base Price) -->
+      <!-- Route Estimator Widget -->
       <div class="widget estimator-widget">
         <div class="widget-header">
           <h2>Route Special Estimator</h2>
-          <div class="status-dot">Hill Lane Live</div>
+          <div class="status-dot">Highway Live</div>
         </div>
 
         <div class="grid-2">
@@ -433,13 +454,13 @@
             <label for="pickup">Pickup Location</label>
             <select id="pickup" class="select" onchange="calculate()">
               <option value="Delhi">Delhi / NCR</option>
-              <option value="Mussoorie">Mussoorie Mall Road</option>
+              <option value="Rishikesh">Rishikesh Laxman Jhula / Tapovan</option>
             </select>
           </div>
           <div class="field">
             <label for="dropoff">Drop-off Location</label>
             <select id="dropoff" class="select" onchange="calculate()">
-              <option value="Mussoorie">Mussoorie Mall Road</option>
+              <option value="Rishikesh">Rishikesh Laxman Jhula / Tapovan</option>
               <option value="Delhi">Delhi / NCR</option>
             </select>
           </div>
@@ -456,7 +477,7 @@
 
         <div class="price-box">
           <div class="price-title">Estimated Delivered Fare</div>
-          <div id="priceDisplay" class="price-val">₹4,499 - ₹4,999</div>
+          <div id="priceDisplay" class="price-val">₹3,999 - ₹4,499</div>
           <div class="price-sub">Includes state tolls, tax & fuel</div>
         </div>
 
@@ -466,67 +487,64 @@
       </div>
     </header>
 
-    <!-- Dashboard Widgets (STRICTLY 2 WIDGETS ONLY) -->
+    <!-- NEW DASHBOARD WIDGETS -->
     <section class="dashboard-grid">
       
-      <!-- Widget 1: Weather Widget (Mussoorie Target) -->
-      <div class="widget mini-widget weather-widget">
+      <!-- Widget 1: Journey Pitstop Timeline (Ultra Lightweight) -->
+      <div class="widget mini-widget">
         <div class="mini-widget-header">
-          <span>⛅</span> Route Weather: Mussoorie
+          <div class="header-text-group"><span>🗺️</span> Journey Highlights</div>
+          <span style="font-size: 0.75rem; color: var(--accent-blue); font-weight: 800; text-transform: uppercase;">~4.5 Hrs</span>
         </div>
 
-        <div class="weather-icon">
-          <img id="weatherIcon" src="https://openweathermap.org/img/wn/01d@4x.png" alt="Mussoorie Weather Icon">
-        </div>
-
-        <div class="weather-info">
-          <div class="weather-temp" id="temp">18°C</div>
-          <div class="weather-desc">
-            <strong id="weather">Pleasant Skies</strong>
-            <span id="condition">Great mountain driving visibility</span>
+        <div class="timeline-container">
+          <div class="timeline-item active">
+            <div class="tl-title">Delhi NCR (Origin)</div>
+            <div class="tl-desc">Doorstep pickup • Express departure</div>
           </div>
-        </div>
-
-        <div class="weather-extra">
-          <div>💧 <span id="humidity">--</span>%</div>
-          <div>🌡️ Feels <span id="feelsLike">--</span>°C</div>
-          <div>💨 <span id="wind">--</span> m/s</div>
-          <div>👁️ <span id="visibility">--</span> km</div>
+          <div class="timeline-item">
+            <div class="tl-title">Delhi-Dehradun Expressway</div>
+            <div class="tl-desc">High-speed 14-lane transit</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-title"> Muzaffarnagar - Haridwar</div>
+            <div class="tl-desc">Ganga Darshan • Short rest stop</div>
+          </div>
+          <div class="timeline-item dest">
+            <div class="tl-title">Rishikesh (Destination)</div>
+            <div class="tl-desc">Arrival at Tapovan / Laxman Jhula</div>
+          </div>
         </div>
       </div>
 
-      <!-- Widget 2: BRAND NEW Live Hill Transit & Altitude Tracker Widget -->
-      <div class="widget mini-widget transit-widget">
+      <!-- Widget 2: Live Fleet Radar & Surge Monitor (CSS Animated, No JS heavy lifting) -->
+      <div class="widget mini-widget">
         <div class="mini-widget-header">
-          <span>🏔️</span> Live Hill Transit Monitor
+          <div class="header-text-group"><span>📡</span> Live Fleet Radar</div>
+          <div class="status-dot" style="background: rgba(245,158,11,0.2); color: var(--gold); border-color: rgba(245,158,11,0.3);">Scanning</div>
         </div>
 
-        <div class="transit-stats">
-          <div class="stat-card">
-            <div class="stat-val">285 km</div>
-            <div class="stat-label">Total Distance</div>
+        <div class="radar-body">
+          <div class="radar-visual">
+            <div class="radar-sweep"></div>
+            <div class="radar-blip blip-1"></div>
+            <div class="radar-blip blip-2"></div>
+            <div class="radar-blip blip-3"></div>
           </div>
-          <div class="stat-card">
-            <div class="stat-val">05h 00m</div>
-            <div class="stat-label">Avg Travel Time</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-val">Clean</div>
-            <div class="stat-label">Highway Status</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-val">Included</div>
-            <div class="stat-label">Green Hill Tax</div>
-          </div>
-        </div>
 
-        <div class="altitude-bar">
-          <div class="alt-header">
-            <span>Delhi (225 m)</span>
-            <span>Mussoorie (2,005 m)</span>
-          </div>
-          <div class="alt-progress-bg">
-            <div class="alt-progress-fill"></div>
+          <div class="radar-stats">
+            <div class="radar-stat-box">
+              <span class="rs-label">Nearby Cabs</span>
+              <span class="rs-val rs-highlight">8 Available</span>
+            </div>
+            <div class="radar-stat-box">
+              <span class="rs-label">Surge Multiplier</span>
+              <span class="rs-val rs-gold">🔒 1.0x (Fixed)</span>
+            </div>
+            <div class="radar-stat-box" style="margin-bottom: 0;">
+              <span class="rs-label">Avg. ETA</span>
+              <span class="rs-val">On-Time</span>
+            </div>
           </div>
         </div>
       </div>
@@ -537,20 +555,19 @@
     <section class="image-showcase-section">
       <div class="image-card">
         <div class="image-frame">
-          <span class="image-badge">Scenic Corridor</span>
-          <!-- IMAGE PLACEHOLDER: Replace src with your image path (e.g. mussoorie-highway.jpg) -->
+          <span class="image-badge">Express Corridor</span>
           <img 
-            src="Mus.avif" 
-            alt="Scenic view of the Delhi to Mussoorie mountain highway journey" 
+            src="carr.avif" 
+            alt="Scenic view of the Delhi to Rishikesh highway journey" 
             loading="lazy">
         </div>
         <div class="image-details">
-          <h3>The Majestic <span>Mountain Highway</span> Drive</h3>
-          <p>Traverse through the scenic Eastern Peripheral Expressway and smoothly transition up the winding foothills of Dehradun to Mussoorie. Our vehicles are rigorously maintained for optimal mountain climb torque and safety.</p>
+          <h3>The Spiritual <span>Ganges Corridor</span> Drive</h3>
+          <p>Cruise seamlessly via the Delhi-Meerut Expressway and Haridwar Bypass directly to the tranquil banks of Rishikesh. Our fleet is maintained for optimal highway efficiency and passenger comfort.</p>
           <div class="image-tags">
-            <span class="image-tag">⛰️ 2,000m Altitude Climb</span>
-            <span class="image-tag">🛣️ Express Expressway Route</span>
-            <span class="image-tag">👨‍✈️ Hill-Trained Driver</span>
+            <span class="image-tag">🌊 Ganges Foothills Entry</span>
+            <span class="image-tag">🛣️ Meerut Expressway Route</span>
+            <span class="image-tag">👨‍✈️ Experienced Highway Driver</span>
           </div>
         </div>
       </div>
@@ -560,28 +577,28 @@
     <section class="section">
       <div class="sec-title">
         <h2>Select Your <span>Outstation Vehicle</span></h2>
-        <p>Clean, sanitized cabs tailored strictly for smooth highway driving and steep mountain curves between Delhi and Mussoorie.</p>
+        <p>Clean, sanitized cabs tailored strictly for smooth expressway cruising and regional transit between Delhi and Rishikesh.</p>
       </div>
       <div class="fleet-grid">
         <div class="fleet-card">
           <div class="fleet-tier">Economy Express</div>
           <div class="fleet-name">Sedan Cab</div>
           <div class="fleet-specs">👥 4 Seats • 🧳 2 Bags • ❄️ AC</div>
-          <p class="fleet-desc">Ideal for small families, couples, or solo hill visits. Swift Dzire, Hyundai Aura, or similar high-torque sedan models.</p>
+          <p class="fleet-desc">Ideal for small families, couples, or solo spiritual trips. Swift Dzire, Hyundai Aura, or similar reliable sedan models.</p>
           <button class="btn-outline" style="width:100%" onclick="handleButtonClick('fleet', 'sedan')">Select Sedan</button>
         </div>
         <div class="fleet-card">
           <div class="fleet-tier">Family Comfort</div>
           <div class="fleet-name">6-Seater SUV</div>
           <div class="fleet-specs">👥 6 Seats • 🧳 4 Bags • ❄️ Dual AC</div>
-          <p class="fleet-desc">Spacious seating with extended luggage space for mountain getaways. Maruti Ertiga or Kia Carens.</p>
+          <p class="fleet-desc">Spacious seating with extended luggage space for group trips and retreats. Maruti Ertiga or Kia Carens.</p>
           <button class="btn-outline" style="width:100%" onclick="handleButtonClick('fleet', 'suv')">Select SUV</button>
         </div>
         <div class="fleet-card">
           <div class="fleet-tier">Executive Luxury</div>
           <div class="fleet-name">Prime Executive</div>
           <div class="fleet-specs">👥 6 Seats • 🧳 5 Bags • ❄️ Plush AC</div>
-          <p class="fleet-desc">Maximum legroom, captain seats, and superior mountain climb suspension. Toyota Innova Crysta.</p>
+          <p class="fleet-desc">Maximum legroom, captain seats, and smooth ride quality for ultimate travel comfort. Toyota Innova Crysta.</p>
           <button class="btn-gold" style="width:100%" onclick="handleButtonClick('fleet', 'prime')">Select Prime SUV</button>
         </div>
       </div>
@@ -591,20 +608,20 @@
     <section class="section">
       <div class="sec-title">
         <h2>Booking <span>FAQs</span></h2>
-        <p>Frequently answered queries regarding regional transits into the Mussoorie hill station.</p>
+        <p>Frequently answered queries regarding regional transits into Rishikesh and Haridwar.</p>
       </div>
       <div class="faq-container">
         <details class="faq-item" open>
-          <summary>Are state tolls and highway charges included in the Delhi to Mussoorie fare?</summary>
-          <p>Yes, all estimated prices generated cleanly include state highway toll fees, green tax, hill permit charges, driver allowances, and fuel overheads.</p>
+          <summary>Are state tolls and highway charges included in the Delhi to Rishikesh fare?</summary>
+          <p>Yes, all estimated prices include state highway toll fees, driver allowances, and fuel overheads.</p>
         </details>
         <details class="faq-item">
-          <summary>Are all cabs equipped for steep hill driving in Mussoorie?</summary>
-          <p>Yes, all our vehicles are operated by hill-certified drivers. On steep mountain climbs, drivers may briefly turn off the A/C if necessary to maintain optimum vehicle power and safety.</p>
+          <summary>Can I request a stop at Haridwar on the way to Rishikesh?</summary>
+          <p>Yes! If you wish to stop at Haridwar for Ganga Darshan or Ganga Aarti, you can request it during booking with your driver for a minor waiting charge.</p>
         </details>
         <details class="faq-item">
-          <summary>Can I request a luggage carrier for the Mussoorie trip?</summary>
-          <p>If you have extra luggage, please inform us while booking. We will arrange a luggage carrier at NO EXTRA CHARGE, subject to availability.</p>
+          <summary>Can I request a luggage carrier for extra bags or rafting equipment?</summary>
+          <p>If you have additional luggage or sports gear, please inform us while booking. We will arrange a luggage carrier at NO EXTRA CHARGE, subject to vehicle availability.</p>
         </details>
       </div>
     </section>
@@ -613,8 +630,8 @@
     <section class="section">
       <div class="driver-banner">
         <div class="driver-text">
-          <h3>Frequent Commercial Hill Fleet Operations? Partner Up.</h3>
-          <p>Attach your commercial taxi to secure steady booking coverage across the bustling Delhi-Dehradun-Mussoorie corridor.</p>
+          <h3>Frequent Commercial Fleet Operations? Partner Up.</h3>
+          <p>Attach your commercial taxi to secure steady booking coverage across the bustling Delhi-Haridwar-Rishikesh highway corridor.</p>
         </div>
         <button class="btn-gold" style="padding: 16px 32px; font-size: 1.05rem;" onclick="window.open('https://forms.gle/oJGsSMvQZQ8EfwLWA', '_blank')">
           🚗 Attach Your Taxi Now
@@ -630,15 +647,14 @@
         <h4>About Trasker Cabs Route Desk</h4>
         <p style="color: var(--text-muted); font-size: 0.95rem;">
           Trasker Cabs operates specialized long-distance outstation taxi lanes bridging
-          Delhi NCR, Noida, and Ghaziabad directly into the foothills and hill stations
-          of Uttarakhand including Dehradun, Rishikesh, and Mussoorie.
+          Delhi NCR, Noida, and Ghaziabad directly into Haridwar, Rishikesh, Dehradun, and Mussoorie.
         </p>
       </div>
       <div class="footer-col">
         <h4>Navigation Links</h4>
         <a href="https://traskercabs.github.io/Trasker-Cabs/">Main Web Portal</a>
-        <a href="https://traskercabs.github.io/Delhi-Dehradun/">Delhi to Dehradun Cab</a>
-        <a href="#">Mussoorie to Delhi Cab</a>
+        <a href="https://traskercabs.github.io/Trasker-Cabs/delhi-to-mussoorie.html">Delhi to Mussoorie Cab</a>
+        <a href="#">Rishikesh to Delhi Cab</a>
       </div>
       <div class="footer-col">
         <h4>Support Terminal</h4>
@@ -648,7 +664,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; 2026 Trasker Cabs. All Rights Reserved. Scheduled highway & hill operations managed safely.
+      &copy; 2026 Trasker Cabs. All Rights Reserved. Scheduled highway operations managed safely.
     </div>
   </footer> 
 
@@ -682,7 +698,7 @@
       switch(actionType) {
         case 'general_support':
           trackConversion('contact', { channel: 'route_page_wa' });
-          window.open(`https://wa.me/${waNum}?text=Hi%20Trasker%2C%20I%20want%20to%20book%20a%20Delhi%20Mussoorie%20Cab.`, '_blank');
+          window.open(`https://wa.me/${waNum}?text=Hi%20Trasker%2C%20I%20want%20to%20book%20a%20Delhi%20Rishikesh%20Cab.`, '_blank');
           break;
 
         case 'widget_book':
@@ -712,10 +728,13 @@
       }
     }
 
-    // Mussoorie Route Hill Rates (Updated Base Price ₹4,499)
+    // Rishikesh Route Rates Configuration
+    // Sedan: ₹3,999 - ₹4,499
+    // SUV (Ertiga): ₹4,999 - ₹5,499 (+1000)
+    // Prime (Innova): ₹5,999 - ₹6,499 (+1000 over Ertiga)
     const rates = {
-      "Delhi-Mussoorie": { sedan: 4499, suv: 5999, prime: 7499 },
-      "Mussoorie-Delhi": { sedan: 4499, suv: 5999, prime: 7499 }
+      "Delhi-Rishikesh": { sedan: 3999, suv: 4999, prime: 5999 },
+      "Rishikesh-Delhi": { sedan: 3999, suv: 4999, prime: 5999 }
     };
 
     function calculate() {
@@ -742,41 +761,7 @@
 
     window.onload = calculate;
 
-    // Mussoorie Weather Fetch API
-    const apiKey = "af21b18c73ad12db5b873b1067ec6b00";
-
-    function loadWeather() {
-      fetch(`https://api.openweathermap.org/data/2.5/weather?q=Mussoorie&appid=${apiKey}&units=metric`)
-        .then(response => response.json())
-        .then(data => {
-          if(!data || !data.weather) return;
-
-          const icon = data.weather[0].icon;
-          document.getElementById("weatherIcon").src = `https://openweathermap.org/img/wn/${icon}@4x.png`;
-          document.getElementById("temp").innerText = Math.round(data.main.temp) + "°C";
-          document.getElementById("weather").innerText = data.weather[0].main;
-          document.getElementById("humidity").innerText = data.main.humidity;
-          document.getElementById("feelsLike").innerText = Math.round(data.main.feels_like);
-          document.getElementById("wind").innerText = data.wind.speed;
-          document.getElementById("visibility").innerText = (data.visibility / 1000).toFixed(1);
-
-          let condition = "Excellent driving conditions";
-          switch(data.weather[0].main) {
-            case "Rain": condition = "Drive carefully on wet mountain roads"; break;
-            case "Thunderstorm": condition = "Exercise caution on hill curves"; break;
-            case "Snow": condition = "Roads may be slippery in high altitude"; break;
-            case "Clouds": condition = "Good driving conditions"; break;
-            case "Mist":
-            case "Fog": condition = "Low visibility on hill bends. Drive carefully."; break;
-          }
-          document.getElementById("condition").innerText = condition;
-        })
-        .catch(err => console.log('Weather fetch issue:', err));
-    }
-
-    window.addEventListener("load", () => {
-      setTimeout(loadWeather, 1000);
-    });
+    // Note: Weather API fetch has been safely removed to reduce network calls and improve load times!
   </script>
 </body>
 </html>
