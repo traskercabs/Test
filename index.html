@@ -263,6 +263,53 @@
     @media (hover: none) and (pointer: coarse) {
       .widget:hover, .transit-widget:hover { transform: none !important; }
     }
+
+    .custom-route-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    margin-top: 28px;
+    padding: 14px 28px;
+
+    background: linear-gradient(135deg, #F59E0B, #D97706);
+    color: #060606;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+
+    border: 1px solid rgba(245,158,11,.35);
+    border-radius: 14px;
+
+    cursor: pointer;
+    transition: all .3s ease;
+
+    box-shadow:
+        0 10px 30px rgba(245,158,11,.22),
+        inset 0 1px 0 rgba(255,255,255,.18);
+}
+
+.custom-route-btn:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 16px 40px rgba(245,158,11,.35),
+        inset 0 1px 0 rgba(255,255,255,.25);
+}
+
+.custom-route-btn:active {
+    transform: translateY(-1px);
+}
+
+.custom-route-btn::after {
+    content: "→";
+    transition: transform .25s ease;
+}
+
+.custom-route-btn:hover::after {
+    transform: translateX(5px);
+}
+
   </style>
 
   <!-- Schema Markup (FAQPage) -->
@@ -340,13 +387,13 @@
 
   <!-- Top Navigation Links -->
   <nav class="navbar">
-    <a href="index.html" class="brand">
+    <a href="https://traskercabs.github.io/Trasker-Cabs/" class="brand">
       <div class="brand-icon">T</div>
       TRASKER <span>CABS</span>
     </a>
     <div class="nav-actions">
       <a href="tel:+918218602998" class="contact-number">📞 +91 8218602998</a>
-      <a href="index.html" class="btn-outline">All Corridors</a>
+      <a href="https://traskercabs.github.io/Trasker-Cabs/" class="btn-outline">All Corridors</a>
       <button class="btn-gold" onclick="handleButtonClick('general_support')">WhatsApp Helpdesk</button>
     </div>
   </nav>
@@ -363,6 +410,15 @@
         
         <h1>Premium <span>Delhi to Mussoorie</span> Cab Service</h1>
         <p>Seamless transit to the Queen of Hills via fast expressways and scenic hill routes. Experience clear transparent pricing, expert mountain-certified drivers, and luxury outstation fleets.</p>
+
+        <a
+        href="https://wa.me/918218602998?text=Hi%20Trasker%20Cabs!%20I%20want%20a%20custom%20route%20quote."
+        class="custom-route-btn"
+        target="_blank"
+        rel="noopener noreferrer">
+         Custom Route
+        </a>
+
       </div>
 
       <!-- Route Special Estimator Widget (With Gold Glow Border & ₹4,499 - ₹4,999 Base Price) -->
@@ -401,7 +457,7 @@
         <div class="price-box">
           <div class="price-title">Estimated Delivered Fare</div>
           <div id="priceDisplay" class="price-val">₹4,499 - ₹4,999</div>
-          <div class="price-sub">Includes state tolls, green tax & fuel</div>
+          <div class="price-sub">Includes state tolls, tax & fuel</div>
         </div>
 
         <button class="btn-action" onclick="handleButtonClick('widget_book')">
@@ -451,7 +507,7 @@
             <div class="stat-label">Total Distance</div>
           </div>
           <div class="stat-card">
-            <div class="stat-val">6h 30m</div>
+            <div class="stat-val">05h 00m</div>
             <div class="stat-label">Avg Travel Time</div>
           </div>
           <div class="stat-card">
@@ -484,7 +540,7 @@
           <span class="image-badge">Scenic Corridor</span>
           <!-- IMAGE PLACEHOLDER: Replace src with your image path (e.g. mussoorie-highway.jpg) -->
           <img 
-            src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80" 
+            src="Mus.avif" 
             alt="Scenic view of the Delhi to Mussoorie mountain highway journey" 
             loading="lazy">
         </div>
@@ -580,8 +636,8 @@
       </div>
       <div class="footer-col">
         <h4>Navigation Links</h4>
-        <a href="index.html">Main Web Portal</a>
-        <a href="delhi-to-dehradun.html">Delhi to Dehradun Cab</a>
+        <a href="https://traskercabs.github.io/Trasker-Cabs/">Main Web Portal</a>
+        <a href="https://traskercabs.github.io/Delhi-Dehradun/">Delhi to Dehradun Cab</a>
         <a href="#">Mussoorie to Delhi Cab</a>
       </div>
       <div class="footer-col">
